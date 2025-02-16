@@ -1,0 +1,8 @@
+/css
+  ├── base.css          # Reset e estilos globais
+  ├── utilities.css     # Classes utilitárias (ex: margin, padding, flex, grid)
+  ├── components.css    # Componentes prontos (botões, cards, etc.)
+  ├── themes.css        # Variáveis de temas (cores, espaçamentos, fontes)
+  ├── forms.css         # Estilização de formulários
+  ├── animations.css    # Animações e transições
+  ├── helpers.css       # Classes auxiliares (visibilidade, overflow, cursor, etc.)
