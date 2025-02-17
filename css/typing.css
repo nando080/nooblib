@@ -1,0 +1,45 @@
+:root {
+    /* TYPE SCALE */
+
+    /* Base font size */
+    --text-base-size: 1rem;
+    /* 16px */
+
+    /* Minor Third Scale */
+    --text-scale-rate: 1.2;
+
+    --text-xs: calc((var(--text-base-size) / var(--text-scale-rate)) / var(--text-scale-rate));
+    --text-sm: calc(var(--text-xs) * var(--text-scale-rate));
+    --text-base: calc(var(--text-sm) * var(--text-scale-rate));
+    --text-lg: calc(var(--text-base) * var(--text-scale-rate));
+    --text-xl: calc(var(--text-lg) * var(--text-scale-rate));
+    --text-2xl: calc(var(--text-xl) * var(--text-scale-rate));
+    --text-3xl: calc(var(--text-2xl) * var(--text-scale-rate));
+    --text-4xl: calc(var(--text-3xl) * var(--text-scale-rate));
+    --text-5xl: calc(var(--text-4xl) * var(--text-scale-rate));
+}
+
+@media (min-width: var(--bp-lg)) {
+    :root {
+        /* TYPE SCALE */
+        /* Major Third Scale */
+        --text-scale-rate: 1.25;
+    }
+}
+
+@media (min-width: var(--bp-xl)) {
+    :root {
+        /* TYPE SCALE */
+        --text-base-size: 1.25em;
+    }
+}
+
+h1, .text-5xl { font-size: var(--text-5xl); }
+h2, .text-4xl { font-size: var(--text-4xl); }
+h3, .text-3xl { font-size: var(--text-3xl); }
+h4, .text-2xl { font-size: var(--text-2xl); }
+h5, .text-xl { font-size: var(--text-xl); }
+h6, .text-lg { font-size: var(--text-lg); }
+.text-base { font-size: var(--text-base); }
+small, .text-sm { font-size: var(--text-sm); }
+.text-xs { font-size: var(--text-xs); }
